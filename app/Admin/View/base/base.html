@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+<head>
+<!---------------------------------head----------------------------->
+<include file="public/header" />
+<block name="base_head">
+</head>
+
+<body>
+
+
+<!-----------------------------------top--------------------------------->
+<include file="public/top" />
+
+    
+    <!-- Start Main Wrapper -->
+    <div id="mws-wrapper">
+    
+    	<!-- Necessary markup, do not remove -->
+		<div id="mws-sidebar-stitch"></div>
+		<div id="mws-sidebar-bg"></div>
+        
+<!----------------------------------left------------------------------------->
+<include file="public/left" />
+
+        <!-- Main Container Start -->
+        <div id="mws-container" class="clearfix">
+        
+ <!---------------------------------------------innerLABEL------------------------------>
+  	<!-- Inner Container Start -->
+<div class="container">
+
+ <block name="base_innerLabel">
+	 <include file="public/innerlabel" />
+ </block>
+ <block name="base_innerContent"></block>
+ 
+</div>
+<!-- Inner Container End -->
+                       
+<!-----------------------------------footer------------------------------------>
+<include file="public/footer" />
+        </div>
+        <!-- Main Container End -->
+        
+    </div>
+
+  <!---------------------------------bottomResource-------------------------------->
+  <include file="public/bottomResource" />
+  
+
+</body>
+</html>
